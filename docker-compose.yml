@@ -26,3 +26,7 @@ services:
             - php
         volumes:
             - ./logs/nginx/:/var/log/nginx
+    phpmyadmin:
+                image: phpmyadmin/phpmyadmin
+                ports:
+                    - "8080:80"
